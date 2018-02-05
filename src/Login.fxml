@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.cells.editors.base.*?>
+<?import java.lang.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Label layoutX="700.0" layoutY="127.0" text="Systems" textFill="#f28322">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="127.0" text="Schwartz" textFill="#a0a2ab">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signUpBtn" layoutX="1231.0" layoutY="38.0" onAction="#signUp" prefHeight="60.0" prefWidth="130.0" style="-fx-background-color: #f28322;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="959.0" layoutY="51.0" text="Don't have an account?" textFill="#a0a2ab">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logoImage" fitHeight="129.0" fitWidth="166.0" layoutX="633.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/SSLogo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="closeBtn" layoutX="91.0" layoutY="38.0" onAction="#close" prefHeight="65.0" prefWidth="233.0" style="-fx-background-color: #FFFFFF;" text="Close Login Screen" textFill="#a0a2ab">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="closeImage" fitHeight="85.0" fitWidth="63.0" layoutX="34.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@close.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="usernameTxt" focusColor="#a0a2ab" layoutX="495.0" layoutY="444.0" prefHeight="65.0" prefWidth="470.0" promptText=" Username" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordTxt" focusColor="#a0a2ab" layoutX="495.0" layoutY="538.0" onAction="#login" prefHeight="65.0" prefWidth="470.0" promptText="Password" style="-fx-text-inner-color: #a0a2ab;" unFocusColor="#a0a2ab">
+      <font>
+          <Font size="24.0" />
+      </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="792.0" layoutY="637.0" onAction="#login" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: #f28322;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="usernameImage" fitHeight="60.0" fitWidth="63.0" layoutX="435.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@username.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="passwordImage" fitHeight="63.0" fitWidth="63.0" layoutX="434.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@password.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="434.0" layoutY="637.0" prefHeight="60.0" prefWidth="236.0" text="Forgot Password?" textFill="#a0a2ab" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="loginSuccessfulLbl" layoutX="520.0" layoutY="730.0" textFill="#f82929">
+          <font>
+          <Font size="18.0" />
+          </font>
+      </Label>
+      <JFXButton fx:id="viewDatabaseBtn" layoutX="1231.0" layoutY="700.0" onAction="#viewDatabase" prefHeight="60.0" prefWidth="130.0" style="-fx-background-color: #f28322;" text="View Database" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

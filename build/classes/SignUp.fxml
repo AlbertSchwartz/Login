@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpController">
+   <children>
+      <Label layoutX="160.0" layoutY="25.0" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="90.0" text="Name" textFill="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="180.0" text="Email" textFill="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="270.0" text="Username" textFill="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="360.0" text="Password" textFill="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nameTxt" focusColor="#a0a2ab" layoutX="75.0" layoutY="110.0" prefHeight="0.0" prefWidth="400.0" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="emailTxt" focusColor="#a0a2ab" layoutX="75.0" layoutY="200.0" prefHeight="0.0" prefWidth="400.0" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="usernameTxt" focusColor="#a0a2ab" layoutX="75.0" layoutY="290.0" prefHeight="0.0" prefWidth="400.0" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordTxt" focusColor="#a0a2ab" layoutX="75.0" layoutY="380.0" prefHeight="0.0" prefWidth="400.0" unFocusColor="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXCheckBox fx:id="showPassCheckBox" checkedColor="#f28322" layoutX="345.0" layoutY="427.0" onAction="#showPassword" text="Show Password" textFill="#a0a2ab" unCheckedColor="#a0a2ab" />
+      <JFXButton fx:id="signUpBtn" layoutX="375.0" layoutY="505.0" onAction="#createAccount" prefHeight="10.0" prefWidth="100.0" style="-fx-background-color: #f28322;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" layoutX="90.0" layoutY="505.0" onAction="#close" prefHeight="20.0" prefWidth="130.0" text="Back to login" textFill="#a0a2ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="backLogo" fitHeight="40.0" fitWidth="40.0" layoutX="65.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backarrow.png" />
+         </image>
+      </ImageView>
+      <Line endX="15.0" fill="#f28322" layoutX="200.0" layoutY="540.0" startX="-100.0" stroke="#f28322" strokeWidth="2.0" style="-fx-fill: #f28322;" />
+      <ImageView fx:id="SSLogo" fitHeight="229.0" fitWidth="224.0" layoutX="610.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SSLogoAgain.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="580.0" layoutY="320.0" text="Schwartz" textFill="#a0a2ab">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="320.0" text="Systems" textFill="#f28322">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameAlertLbl" layoutX="170.0" layoutY="95.0" textFill="#f82929">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordAlertLbl" layoutX="170.0" layoutY="365.0" textFill="#f82929">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameAlertLbl" layoutX="170.0" layoutY="275.0" textFill="#f82929">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailAlertLbl" layoutX="170.0" layoutY="185.0" textFill="#f82929">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="successLbl" layoutX="145.0" layoutY="460.0" textFill="#f28322">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="showPassTextTxt" focusColor="#a0a2ab" layoutX="75.0" layoutY="380.0" prefHeight="0.0" prefWidth="400.0" unFocusColor="#a0a2ab" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AlertController">
+    <children>
+        <Label fx:id="error" layoutX="137.0" layoutY="300.0" text="Login was successful." textFill="#f28322">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="logoImage" fitHeight="129.0" fitWidth="166.0" layoutX="191.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../Desktop/SSLogo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="69.0" layoutY="136.0" text="Schwartz" textFill="#a0a2ab">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Label layoutX="258.0" layoutY="136.0" text="Systems" textFill="#f28322">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
